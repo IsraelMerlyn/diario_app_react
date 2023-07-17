@@ -47,6 +47,7 @@ export const NoteView = () => {
     }
 
     const onDelete = () => {
+        Swal.fire('Nota Eliminada ', messageSaved , 'warning');
         dispatch( startDeletingNote() );
     }
 
